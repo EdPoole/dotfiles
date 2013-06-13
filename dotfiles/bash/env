@@ -1,0 +1,18 @@
+export EDITOR='subl -n -w'
+export PATH=$PATH:~/.bin
+export PATH=$PATH:/usr/local/lib/node
+
+# Vi mode in my Terminal? YES FUCKING PLEASE!!
+set -o vi
+
+# Jumplist
+ source ~/.jumplist-driver
+
+# Ruby Version Manager
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+# MacPython 2.6
+PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
+
+PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+PATH="/usr/local/share/npm/bin:$PATH"
