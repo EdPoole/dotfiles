@@ -1,7 +1,6 @@
 # Open Aliases etc in sublime
 
 alias aliases="subl ~/.bin/dotfiles/bash/aliases"
-alias aliases="subl ~/.bin/dotfiles/bash/aliases"
 
 # Coloured Grep
 
