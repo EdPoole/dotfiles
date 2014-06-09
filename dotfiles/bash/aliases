@@ -98,10 +98,11 @@ alias gfog='git push fog HEAD:master'
 # alias gpl="git pull"
 alias gpl="git pull --rebase"
 alias gup='git fetch origin && grb origin/$(git_current_branch)' # gup instead of gpl
-alias gd='git diff | subl -n'
+alias gd='git diff | subl'
 alias gk="gitk --all"
 alias gl="git log --graph --pretty=format':%C(red)%h%Cgreen%d%Creset %s %C(blue) %an, %ar%Creset'"
 alias glo="git log --oneline"
+alias gdc='git diff --cached | subl'
 function gblame() { git blame $1 | subl -n -w; }
 
 # mkdir and cd into it
@@ -148,6 +149,13 @@ function j() {
 		jump $@
 	fi
 }
+
+# Laravel Log
+
+function laralog() {
+    tail -f "app/storage/logs/log-apache2handler-"`eval date +%Y`"-"`eval date +%m`"-"`eval date +%d`".txt"
+}
+
 
 # MySQL
 #function mysql() {
